@@ -1,0 +1,16 @@
+.nav{
+    color: hsl(219, 9%, 45%);
+}
+.link{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+  
+}
+
+.link:hover{
+    cursor: pointer;
+    border-bottom:3px solid hsl(26, 100%, 55%);
+    padding-bottom:10px;
+    color: black;
+}
