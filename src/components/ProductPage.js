@@ -1,12 +1,29 @@
-import React, { Component } from 'react';
+// import  { useState } from 'react';
 import "./ProductPage.css";
-const ProductPage= ()=>{
+const ProductPage= ({setAmount,amount,setOpenImage,addProduct})=>{
+  const increaseAmount = ()=>{
+      setAmount(amount+1)
+  }
+   const decreaseAmount = () => {
+     if(amount <=0)return;
+     setAmount(amount -1);
+   };
     return (
       <>
         <main className="product__grid-con">
           <section className="product__image-con">
             <div className="main-image-con">
-              <img src="/images/image-product-1.jpg" alt="product" />
+              <button className="prev-btn">
+                <img src="/images/icon-previous.svg" alt="previous" />
+              </button>
+              <button className="next-btn">
+                <img src="/images/icon-next.svg" alt="next" />
+              </button>
+              <img
+                src="/images/image-product-1.jpg"
+                alt="product"
+                onClick={() => setOpenImage(true)}
+              />
             </div>
             <div className="thumbnails-con">
               <div className="image-con">
@@ -57,22 +74,31 @@ const ProductPage= ()=>{
 
             <div className="product__button-con">
               <div className="product__quality">
-                <button className="product__decrease-btn">
+                <button
+                  className="product__decrease-btn"
+                  onClick={decreaseAmount}
+                >
                   <img src="/images/icon-minus.svg" alt="minus icon" />
                 </button>
-                <h4>3</h4>
-                <button className="product__increase-btn">
+                <h4>{amount}</h4>
+                <button
+                  className="product__increase-btn"
+                  onClick={increaseAmount}
+                >
                   <img src="/images/icon-plus.svg" alt="plus icon" />
                 </button>
               </div>
-              <button className="product__cart-btn">
+              <button
+                className={
+                  addProduct ? "product__cart-btn" : "product__cart-btn"
+                }
+              >
                 <img src="/images/icon-cart.svg" alt="cart icon" />
                 <span>Add to cart</span>
               </button>
             </div>
           </section>
         </main>
-        
       </>
     );
 }

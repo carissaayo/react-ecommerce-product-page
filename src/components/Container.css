@@ -1,6 +1,20 @@
 .container{
     margin:0 10%;
-}
+    position: relative;
+        /* height: 100vh; */
+    }
+
 button{
     cursor: pointer;
+}
+
+@media (max-width:1150px){
+    .container{
+        margin:0 7%;
+    }
+}
+@media (max-width:790px){
+    .container{
+        margin:0 0%;
+    }
 }

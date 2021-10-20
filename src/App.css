@@ -3,10 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+*{
+  transition: linear 0.3s;
+}
 
 .App {
   text-align: center;
   position:relative;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 .product-page__overlay{
@@ -18,7 +23,15 @@
     left:0;
     opacity: 0.75;
     display: none;
+
 }
 .display-overlay{
   display: block;
+
+}
+
+@media (max-width:1000px){
+  .display-overlay {
+    display: none;
+  }
 }

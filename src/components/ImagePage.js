@@ -1,10 +1,14 @@
   import React, { Component } from 'react';
   import "./ImagePage.css"
 
-  const ImagePage=()=>{
+  const ImagePage=({openImage,setOpenImage})=>{
       return (
-        <section className="image-page-con">
-          <button className="close-btn">
+        <section
+          className={
+            openImage ? "image-page-con show-image-con" : "image-page-con"
+          }
+        >
+          <button className="close-btn" onClick={() => setOpenImage(false)}>
             <img src="/images/icon-close.svg" alt="" />
           </button>
           <div className="main-image-con">

@@ -14,3 +14,6 @@
     padding-bottom:10px;
     color: black;
 }
+@media (max-width:790px){
+    .nav{display: none;}
+}

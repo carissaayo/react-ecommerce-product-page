@@ -3,10 +3,16 @@ import Navbar from "./Navbar";
 import "./Header.css";
 
 
-const Header = ()=>{
+const Header = ({setOpenSidebar, showCart,setShowCart})=>{
     const [current,setCurrent] = useState(false);
     return (
       <div className='header'>
+            <button  
+            onClick={()=>setOpenSidebar(true)} 
+            className='harmburger-menu'
+            >
+              <img src="/images/icon-menu.svg" alt="menu" />
+            </button>
           <div className="logo-flex-con">
             <div className="logo">
             <img src="/images/logo.svg" alt="logo" />
@@ -14,7 +20,7 @@ const Header = ()=>{
             <Navbar />
           </div>
         <div className="images-con">
-            <button className="btn-cart">
+            <button className="btn-cart" onClick={()=>setShowCart(!showCart)}>
                 <img src="/images/icon-cart.svg" alt="cart icon" />
             </button>
             <button className="avatar-con">

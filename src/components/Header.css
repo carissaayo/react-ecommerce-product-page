@@ -6,17 +6,17 @@
     padding:15px;
     margin-bottom: 100px;
 }
-
-
 .logo-flex-con{
     display: flex;
     justify-content: space-between;
-    width:500px;
+    width:350px;
     max-width: 100%;
+    align-items: center;
 }
-.images-con{
- 
+.logo{
+    margin-right: 40px;
 }
+
 .avatar-con >img{
   width:50px;
   margin-left: 50px;
@@ -26,6 +26,61 @@ button{
     background-color: transparent;
     border:none;
 }
+
 .btn-cart img{
     width: 30px;
+}
+.harmburger-menu{
+    display: none;
+}
+
+@media(max-width:1150px){
+    .header{
+       margin-bottom: 10px;
+    }
+}
+@media (max-width:1000px){
+
+}
+@media (max-width:790px){
+   .harmburger-menu{
+       display: block;
+       margin-right: 10px;
+     
+   }
+   .harmburger-menu img{
+       width:20px;
+   }
+   .header{
+       padding-left: 50px;
+       justify-content: space-around;
+   }
+}
+@media (max-width:600px){
+    .header{
+        
+         padding-left: 50px;
+         justify-content: space-around;
+     }
+     .logo-flex-con{
+    width:200px;
+}
+   .harmburger-menu{
+       margin-right: -10px;
+   }
+}
+@media (max-width:540px){
+    .header{
+         padding-left: 0px;
+         justify-content: space-around;
+       padding:15px 0px; 
+       margin-bottom: 0px;
+
+     }
+     .logo-flex-con{
+    width:200px;
+}
+   .harmburger-menu{
+       margin-right: -10px;
+   }
 }

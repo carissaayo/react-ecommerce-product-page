@@ -1,27 +1,25 @@
 export const links = [
-  { name: "Collections", id: 1, current: false },
-  { name: "Men", id: 2, current: false },
-  { name: "Women", id: 3, current: false },
-  { name: "About", id: 4, current: false },
-  { name: "Contact", id: 5, current: false },
+  { name: "Collections", id: 1 },
+  { name: "Men", id: 2 },
+  { name: "Women", id: 3 },
+  { name: "About", id: 4 },
+  { name: "Contact", id: 5 },
 ];
-//  Fall Limited Edition Sneakers
+const products = [
+  { name: "product-1", src: "/images/image-product-1.jpg" },
+  { name: "product-2", src: "/images/image-product-2.jpg" },
+  { name: "product-3", src: "/images/image-product-3.jpg" },
+  { name: "product-4", src: "/images/image-product-4.jpg" },
+  { name: "product-5", src: "/images/image-product-5.jpg" },
+];
 
-//   These low-profile sneakers are your perfect casual wear companion. Featuring a 
-//   durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-//   $125.00
-//   50%
-//   $250.00
-
-//   0
-//   Add to cart
-  
 //   <div class="attribution">
-//     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+//     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
 //     Coded by <a href="#">Your Name Here</a>.
 //   </div>
-{/* <style>
+{
+  /* <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style> */}
+  </style> */
+}
