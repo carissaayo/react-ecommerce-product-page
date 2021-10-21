@@ -6,6 +6,8 @@
 
 button{
     cursor: pointer;
+    border:none;
+
 }
 
 @media (max-width:1150px){

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Cart.css";
-const Cart = ({ setShowCart }) => {
+const Cart = ({ setShowCart,total }) => {
   return (
     <main className="cart">
       <h3>Cart</h3>
@@ -11,7 +11,7 @@ const Cart = ({ setShowCart }) => {
         </div>
         <p className="product-name">Fall Limited Edition Sneakers</p>
         <p className="product-price">
-          $125 x 3 <span>$375.00</span>
+          $125 x {total} <span>$375.00</span>
         </p>
         <button className="delete-btn">
           <img src="/images/icon-delete.svg" alt="delete" />

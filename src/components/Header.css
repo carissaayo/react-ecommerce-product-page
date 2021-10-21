@@ -22,13 +22,25 @@
   margin-left: 50px;
 }
 
-button{
+.header button{
     background-color: transparent;
-    border:none;
+}
+.btn-cart{
+    position: relative;
 }
 
 .btn-cart img{
     width: 30px;
+}
+.cart-total{
+    color:white;
+    position: absolute;
+bottom:20px;
+left:10px;
+background-color: hsl(26, 100%, 55%);
+border-radius: 10px;
+width:20px;
+
 }
 .harmburger-menu{
     display: none;

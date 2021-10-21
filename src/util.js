@@ -5,12 +5,11 @@ export const links = [
   { name: "About", id: 4 },
   { name: "Contact", id: 5 },
 ];
-const products = [
-  { name: "product-1", src: "/images/image-product-1.jpg" },
-  { name: "product-2", src: "/images/image-product-2.jpg" },
-  { name: "product-3", src: "/images/image-product-3.jpg" },
-  { name: "product-4", src: "/images/image-product-4.jpg" },
-  { name: "product-5", src: "/images/image-product-5.jpg" },
+export const data = [
+  { name: "product-1", src: "/images/image-product-1.jpg" ,id: 1},
+  { name: "product-2", src: "/images/image-product-2.jpg" ,id: 2},
+  { name: "product-3", src: "/images/image-product-3.jpg" ,id: 3},
+  { name: "product-4", src: "/images/image-product-4.jpg" ,id: 4},
 ];
 
 //   <div class="attribution">

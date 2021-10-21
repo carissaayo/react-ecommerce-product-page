@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import "./Header.css";
 
 
-const Header = ({setOpenSidebar, showCart,setShowCart})=>{
+const Header = ({setOpenSidebar, showCart,setShowCart,total})=>{
     const [current,setCurrent] = useState(false);
     return (
       <div className='header'>
@@ -21,6 +21,7 @@ const Header = ({setOpenSidebar, showCart,setShowCart})=>{
           </div>
         <div className="images-con">
             <button className="btn-cart" onClick={()=>setShowCart(!showCart)}>
+              <span className="cart-total">{total}</span>
                 <img src="/images/icon-cart.svg" alt="cart icon" />
             </button>
             <button className="avatar-con">
