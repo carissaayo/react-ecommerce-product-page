@@ -1,6 +1,4 @@
-import React, { Component } from "react";
 import "./ImagePage.css";
-
 const ImagePage = ({ openImage, setOpenImage, setIndex, index, products }) => {
   return (
     <section

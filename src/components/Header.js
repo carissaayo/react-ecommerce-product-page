@@ -1,10 +1,6 @@
-import React ,{ useState}from 'react';
 import Navbar from "./Navbar";
 import "./Header.css";
-
-
 const Header = ({setOpenSidebar, showCart,setShowCart,total})=>{
-    const [current,setCurrent] = useState(false);
     return (
       <div className='header'>
             <button  
@@ -21,7 +17,7 @@ const Header = ({setOpenSidebar, showCart,setShowCart,total})=>{
           </div>
         <div className="images-con">
             <button className="btn-cart" onClick={()=>setShowCart(!showCart)}>
-              <span className="cart-total">{total}</span>
+              {total? <span className="cart-total">{total}</span>: null}
                 <img src="/images/icon-cart.svg" alt="cart icon" />
             </button>
             <button className="avatar-con">

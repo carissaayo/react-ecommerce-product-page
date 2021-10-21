@@ -1,4 +1,4 @@
-import  { useState ,useEffect } from 'react';
+import  { useEffect } from 'react';
 import "./ProductPage.css";
 const ProductPage = ({
   setAmount,
@@ -6,7 +6,6 @@ const ProductPage = ({
   setOpenImage,
   addProduct,
   setTotal,
-  setAddProduct,
   index,
   setIndex,
   products,
@@ -21,7 +20,7 @@ const ProductPage = ({
   };
   const addToCart = () => {
     setTotal((prevTotal) => (prevTotal += amount));
-    setAddProduct(true);
+    setAmount(0)
   };
   useEffect(() => {
     const lastIndex = products.length - 1;

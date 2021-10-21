@@ -33,7 +33,6 @@
     width:400px;
     display: flex;
     max-width:100% ;
-    /* justify-content: space-between; */
     justify-content: space-around;
 
 }

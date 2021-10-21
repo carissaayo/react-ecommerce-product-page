@@ -39,7 +39,7 @@ const Container = ({
         index={index}
         setIndex={setIndex}
       />
-      {showCart ? <Cart total={total} setShowCart={setShowCart} /> : null}
+      {showCart ? <Cart total={total} setTotal={setTotal} setShowCart={setShowCart} /> : null}
     </div>
   );
 };
