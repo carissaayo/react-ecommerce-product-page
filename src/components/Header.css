@@ -90,9 +90,12 @@ width:20px;
 
      }
      .logo-flex-con{
-    width:200px;
+    width:160px;
 }
    .harmburger-menu{
-       margin-right: -10px;
+       margin-right: 10px;
+   }
+   .images-con{
+       /* width:10px */
    }
 }
